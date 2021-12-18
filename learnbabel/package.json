@@ -1,0 +1,28 @@
+{
+  "name": "babel-v1",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "start": "BABEL_DISABLE_CACHE=1 babel-node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/FSD_JuLong/babel-v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/FSD_JuLong/babel-v1/issues"
+  },
+  "homepage": "https://bitbucket.org/FSD_JuLong/babel-v1#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/node": "^7.15.8",
+    "babel-node": "^0.0.1-security"
+  }
+}
