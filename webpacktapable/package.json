@@ -1,0 +1,20 @@
+{
+  "name": "learnwebpacktapable",
+  "version": "1.0.0",
+  "description": "- Sync：这是一个同步的hook - Async：这是一个异步的hook - Bail：Bail在英文中的意思是保险，保障的意思，实现的效果是，当一个hook注册了多个回调方法，任意一个回调方法返回了不为undefined的值，就不再执行后面的回调方法了，就起到了一个“保险丝”的作用。 - Waterfall：Waterfall在英语中是瀑布的意思，在编程世界中表示顺序执行各种任务，在这里实现的效果是，当一个hook注册了多个回调方法，前一个回调执行完了才会执行下一个回调，而前一个回调的执行结果会作为参数传给下一个回调函数。 - Loop：Loop就是循环的意思，实现的效果是，当一个hook注册了回调方法，如果这个回调方法返回了true就重复循环这个回调，只有当这个回调返回undefined才执行下一个回调。 - Parallel：Parallel是并行的意思，有点类似于Promise.all，就是当一个hook注册了多个回调方法，这些回调同时开始并行执行。 - Series：Series就是串行的意思，就是当一个hook注册了多个回调方法，前一个执行完了才会执行下一个。 - Parallel和Series的概念只存在于异步的hook中，因为同步hook全部是串行的。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/FSD_JuLong/learnwebpacktapable.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/FSD_JuLong/learnwebpacktapable#readme",
+  "dependencies": {
+    "tapable": "^2.2.0"
+  }
+}

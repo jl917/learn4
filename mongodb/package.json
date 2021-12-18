@@ -1,0 +1,20 @@
+{
+  "name": "learnmongodb",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/FSD_JuLong/learnmongodb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/FSD_JuLong/learnmongodb#readme",
+  "dependencies": {
+    "mongodb": "^4.0.0"
+  }
+}
