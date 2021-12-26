@@ -1,11 +1,11 @@
 import React from 'react';
 import { RecoilRoot } from 'recoil';
-import Count from './coil/Count';
+import Routes from '@/router';
 
 const App = () => {
   return (
     <RecoilRoot>
-      <Count />
+      <Routes />
     </RecoilRoot>
   )
 }
