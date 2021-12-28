@@ -1,0 +1,32 @@
+{
+  "name": "reac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "build": "vite build --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-replace": "^3.0.0",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@vitejs/plugin-react": "^1.1.3",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "sass": "^1.45.1",
+    "tailwindcss": "^3.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.6"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1"
+  }
+}
