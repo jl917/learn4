@@ -2,7 +2,8 @@ import Main from '@/pages/Main';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from '@/pages/About';
-import Loader from './loader-loadable';
+import Product from '@/pages/Product';
+// import Loader from './loader-loadable';
 
 // import Loader from './loader';
 
@@ -15,6 +16,7 @@ const Router: React.FC = () => (
     <Route path="/">
       <Route index element={<Main />} />
       <Route path="about" element={<About />} />
+      <Route path="product" element={<Product />} />
       {
         // Object.entries(routes).map(([key, value]) => <Route path={`/${key}`} element={Loader(value)} />)
       }
