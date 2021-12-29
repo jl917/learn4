@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/server",
     "build": "node build production",
     "build:dev": "node build dev",
     "build:qa": "node build qa",
     "build:stage": "node build stage",
-    "dev": "nodemon ./src/server.js"
+    "serve": "node dist/server"
   },
   "keywords": [],
   "author": "",

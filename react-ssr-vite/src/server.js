@@ -27,7 +27,7 @@ async function createServer() {
 
       const html = template.replace(`<!--ssr-outlet-->`, appHtml)
 
-      res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
+      res.status(200).end(html)
     } catch (e) {
       vite.ssrFixStacktrace(e)
       console.error(e)
