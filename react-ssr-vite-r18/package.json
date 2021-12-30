@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server",
+    "dev": "nodemon --exec node src/server local",
     "build": "node build production",
     "build:dev": "node build dev",
     "build:qa": "node build qa",
