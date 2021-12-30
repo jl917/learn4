@@ -30,7 +30,7 @@ const Router: React.FC = () => (
       <Route path="about" element={<About />} />
       <Route path="product" element={<Product />} /> */}
       {
-        routes.map(({ path, elementName }) => <Route key="path" path={`/${path}`} element={Loader(elementName)} />)
+        routes.map(({ path, elementName }) => <Route key="path" path={path} element={Loader(elementName)} />)
       }
     </Route>
   </Routes>

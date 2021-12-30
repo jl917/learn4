@@ -5,10 +5,18 @@ import Loader from './loader-suspense';
 
 // import Loader from './loader';
 
-const routes = {
-  'about': 'About',
-  'product': 'Product'
-}
+const routes = [
+  {
+    path: 'about',
+    // element: <About />,
+    elementName: 'About',
+  },
+  {
+    path: 'product',
+    // element: <Product />,
+    elementName: 'Product',
+  }
+]
 
 const Router: React.FC = () => (
   <Routes>
@@ -20,7 +28,7 @@ const Router: React.FC = () => (
         // Object.entries(routes).map(([key, value]) => <Route path={`/${key}`} element={Loader(value)} />)
       }
       {
-        Object.entries(routes).map(([key, value]) => <Route key={key} path={`/${key}`} element={Loader(value)} />)
+        routes.map(({ path, elementName }) => <Route key={path} path={path} element={Loader(elementName)} />)
       }
     </Route>
   </Routes>
