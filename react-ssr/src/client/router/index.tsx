@@ -6,9 +6,13 @@ import Loader from './loader-loadable';
 
 // import Loader from './loader';
 
-const routes = {
-  'about': 'About'
-}
+const routes = [
+  {
+    path: 'about',
+    // element: <About />,
+    elementName: 'About',
+  }
+]
 
 const Router: React.FC = () => (
   <Routes>
@@ -16,13 +20,7 @@ const Router: React.FC = () => (
       <Route index element={<Main />} />
       <Route path="about" element={<About />} />
       {
-        // Object.entries(routes).map(([key, value]) => <Route path={`/${key}`} element={Loader(value)} />)
-      }
-      {
-        // suspense 지원 안함.
-        /* {
-          Object.entries(routes).map(([key, value]) => <Route path={`/${key}`} element={Loader(value)} />)
-        } */
+        // routes.map(({ path, elementName }) => <Route key="path" path={path} element={Loader(elementName)} />)
       }
     </Route>
   </Routes>
