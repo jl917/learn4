@@ -10,7 +10,7 @@ export default defineConfig(({ mode, command }) => {
     root: './src',
     build: {
       outDir: '../dist',
-      emptyOutDir: false,
+      emptyOutDir: true,
     },
     resolve: {
       alias: {

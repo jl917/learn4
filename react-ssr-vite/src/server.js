@@ -3,9 +3,13 @@ const path = require('path')
 const express = require('express')
 const { createServer: createViteServer } = require('vite')
 
+const isLocal = process.argv[2] === 'local';
+
 async function createServer() {
   const app = express()
-  app.use(express.static(path.resolve(__dirname), { index: '_index.html' }));
+  if (!isLocal) {
+    app.use(express.static(path.resolve(__dirname), { index: '_index.html' }));
+  }
 
   const vite = await createViteServer({
     server: { middlewareMode: 'ssr' }

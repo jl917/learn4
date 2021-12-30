@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server",
+    "dev": "nodemon --exec node src/server local",
     "build": "node build production",
     "build:dev": "node build dev",
     "build:qa": "node build qa",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@rollup/plugin-replace": "^3.0.0",
     "@types/express": "^4.17.13",
+    "@types/loadable__component": "^5.13.4",
     "@types/node": "^17.0.4",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
@@ -28,6 +29,7 @@
     "vite": "^2.7.6"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.2",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "axios": "^0.24.0",
