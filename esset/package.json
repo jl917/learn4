@@ -1,0 +1,40 @@
+{
+  "name": "esset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "watch": "jnpkg watch",
+    "build": "jnpkg build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jl917/esset.git"
+  },
+  "keywords": [],
+  "author": "jl917",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jl917/esset/issues"
+  },
+  "homepage": "https://github.com/jl917/esset#readme",
+  "type": "commonjs",
+  "module": "./es/index.js",
+  "exports": {
+    "import": "./es/index.js",
+    "require": "./lib/index.js"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "semantic-release": "18.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "glob": "^7.2.0"
+  }
+}
