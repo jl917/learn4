@@ -6,6 +6,7 @@
   "scripts": {
     "start": "BABEL_DISABLE_CACHE=1 babel-node index"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/FSD_JuLong/babel-v1.git"
