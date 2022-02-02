@@ -1,0 +1,12 @@
+{
+  "name": "syntheticevent",
+  "version": "1.0.0",
+  "description": "- 需要抹平不同浏览器的差异 - 与内部的「优先级机制」绑定 - 需要考虑所有浏览器事件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
